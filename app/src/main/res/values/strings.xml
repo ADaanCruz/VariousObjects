@@ -28,4 +28,5 @@
     <string name="adan_cruz">Adán Cruz</string>
     <string name="my_phone">7224331938</string>
     <string name="omar_blanco">Omar Blanco</string>
+    <string name="title_activity_maps_gps">Map</string>
 </resources>
