@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeActivity"></activity>
-        <activity android:name=".DataActivity"></activity>
-        <activity android:name=".camara"></activity>
+        <activity android:name=".InternetActivity"></activity>
+        <activity android:name=".CreditsActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".DataActivity" />
+        <activity android:name=".camara" />
         <activity android:name=".Imagenes" />
         <activity android:name=".Menu" />
         <activity android:name=".MainActivity">
