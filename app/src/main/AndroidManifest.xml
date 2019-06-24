@@ -3,7 +3,9 @@
     package="com.example.variousobjects">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -13,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".camara"></activity>
+        <activity android:name=".Creditos"></activity>
+        <activity android:name=".camara" />
         <activity android:name=".Imagenes" />
         <activity
             android:name=".Menu"
