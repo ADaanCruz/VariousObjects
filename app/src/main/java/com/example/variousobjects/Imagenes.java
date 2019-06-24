@@ -30,8 +30,8 @@ public class Imagenes extends AppCompatActivity implements View.OnClickListener 
                 break;
 
             case R.id.btnsigi:
-                //  intent= new Intent(this, nomClase.class);
-                // startActivity(intent);
+                  intent= new Intent(this, camara.class);
+                  startActivity(intent);
                 break;
        }
     }
