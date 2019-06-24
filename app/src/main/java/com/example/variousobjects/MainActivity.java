@@ -21,20 +21,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick (View view)
     {
         EditText correo = findViewById(R.id.correo);
-        String valorCorreo = correo.getText().toString();
+        EditText contraseña = findViewById(R.id.password);
 
-        // intent = new Intent(view.getContext(), Menu.class);
-        //startActivity(intent);
-        if (valorCorreo == "omar.blanco@8w.com.mx") {
-            Toast.makeText(this, "Abriendo Segunda Actividad", Toast.LENGTH_SHORT).show();
+        String valorCorreo = correo.getText().toString();
+        String valorContraseña = contraseña.getText().toString();
+
+        if ((valorCorreo.equals("omar.blanco@8w.com.mx")||valorCorreo.equals("lourdesvega21@hotmail.com")||valorCorreo.equals("djdaan86@gmail.com "))&&valorContraseña.equals("123456"))
+        {
+            intent = new Intent(view.getContext(), Menu.class);
+            startActivity(intent);
+            Toast.makeText(this,"Abriendo Segunda Actividad", Toast.LENGTH_SHORT).show();
         } else {
-            //Toast.makeText(this, "usuario incorrecto", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Usuario y/o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
         }
-/*
-        intent = new Intent(view.getContext(), Menu.class);
-        startActivity(intent);
-        Toast.makeText(this,"Abriendo Segunda Actividad", Toast.LENGTH_SHORT).show();
-*/
+
 
     }
 
