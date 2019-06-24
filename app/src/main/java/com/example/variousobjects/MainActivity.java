@@ -22,20 +22,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void onClick (View view)
     {
-        EditText correo = findViewById(R.id.correo);
-        EditText contraseña = findViewById(R.id.password);
+        switch (view.getId()){
+            case R.id.ingresar:
+                EditText correo = findViewById(R.id.correo);
+                EditText contraseña = findViewById(R.id.password);
 
-        String valorCorreo = correo.getText().toString();
-        String valorContraseña = contraseña.getText().toString();
+                String valorCorreo = correo.getText().toString();
+                String valorContraseña = contraseña.getText().toString();
 
-        if ((valorCorreo.equals("omar.blanco@8w.com.mx")||valorCorreo.equals("lourdesvega21@hotmail.com")||valorCorreo.equals("djdaan86@gmail.com "))&&valorContraseña.equals("123456"))
-        {
-            intent = new Intent(view.getContext(), Menu.class);
-            startActivity(intent);
-            Toast.makeText(this,"Abriendo Segunda Actividad", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Usuario y/o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
+                if ((valorCorreo.equals("omar.blanco@8w.com.mx")||valorCorreo.equals("lourdesvega21@hotmail.com")||valorCorreo.equals("djdaan86@gmail.com "))&&valorContraseña.equals("123456"))
+                {
+                    intent = new Intent(view.getContext(), Menu.class);
+                    startActivity(intent);
+                    Toast.makeText(this,"Abriendo Segunda Actividad", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "Usuario y/o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.salir:
+                Toast.makeText(this,"Adios Popo", Toast.LENGTH_SHORT).show();
+                System.exit(0);
+                break;
+
         }
+
+
+
 
     }
 
