@@ -10,13 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".WelcomeActivity"></activity>
-        <activity android:name=".DataActivity">
+        <activity android:name=".DataActivity"></activity>
         <activity android:name=".camara"></activity>
         <activity android:name=".Imagenes" />
-        <activity
-            android:name=".Menu"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Menu" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

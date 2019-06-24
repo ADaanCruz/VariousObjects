@@ -61,12 +61,14 @@ public class DataActivity extends AppCompatActivity {
         btnSiguiente = findViewById(R.id.button_next_data);
 
         // Se modifican los valores iniciales de los campos.
+        acNombre.setText(this.getString(R.string.omar_blanco));
         ArrayAdapter arrayAdapter_spinner_nacion = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_spinner_dropdown_item,
                 nacionalidades
         );
         fechaDeNacimiento = sdf.format(new Date(cFechaDeNacimiento.getDate()));
+        acTelefono.setText(this.getString(R.string.my_phone));
         spNacionalidad.setAdapter(arrayAdapter_spinner_nacion);
 
         // Se cargan los campos del Activity en la clase de validaciones.
@@ -74,6 +76,7 @@ public class DataActivity extends AppCompatActivity {
         fieldValidations = new FieldValidations(this, campos);
 
         // Se programa la lógica.
+//        TODO: Falta validar los años que sean mayor a n años.
         cFechaDeNacimiento.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int day) {
@@ -105,6 +108,7 @@ public class DataActivity extends AppCompatActivity {
                     intent.putExtra("gender", genero);
                     intent.putExtra("phone", telefono);
                     intent.putExtra("nationality", nacionalidad);
+                    finish();
                     startActivity(intent);
                 } else {
                     Toast.makeText(DataActivity.this, "Llena todos los campos", Toast.LENGTH_SHORT).show();
@@ -118,6 +122,13 @@ public class DataActivity extends AppCompatActivity {
                 clearValues();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        startActivity(new Intent(DataActivity.this, MainActivity.class));
     }
 
     private EditText[] loadFields() {

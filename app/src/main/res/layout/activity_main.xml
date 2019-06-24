@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="30dp"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:contentDescription="img_profile"
         tools:layout_editor_absoluteX="118dp"
         tools:layout_editor_absoluteY="16dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
         android:id="@+id/correo"
-        android:layout_width="349dp"
-        android:layout_height="54dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Correo"
         android:inputType="textPersonName"
@@ -30,8 +32,8 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="354dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
         android:text="123456"
@@ -42,10 +44,11 @@
         android:id="@+id/ingresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Ingresar"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="405dp" />
-
-
 
 </LinearLayout>

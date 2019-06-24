@@ -34,7 +34,7 @@ public class Menu extends AppCompatActivity  implements View.OnClickListener {
         Button btnantm=(Button)findViewById(R.id.btnantm);
         btnantm.setOnClickListener(this);
 
-        Button btnsigm=(Button)findViewById(R.id.btnsigm);
+        Button btnsigm=(Button)findViewById(R.id.btnsalm);
         btnsigm.setOnClickListener(this);
 
     }
@@ -69,13 +69,13 @@ public class Menu extends AppCompatActivity  implements View.OnClickListener {
                 break;
 
             case R.id.btnantm:
-                //intent= new Intent(this, nomClase.class);
-                //startActivity(intent);
+                intent= new Intent(Menu.this, DataActivity.class);
+                finish();
+                startActivity(intent);
                 break;
 
-            case R.id.btnsigm:
-                //  intent= new Intent(this, nomClase.class);
-                // startActivity(intent);
+            case R.id.btnsalm:
+                finish();
                 break;
         }
     }
