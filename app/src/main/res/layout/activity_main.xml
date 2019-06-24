@@ -16,9 +16,10 @@
         tools:layout_editor_absoluteX="118dp"
         tools:layout_editor_absoluteY="16dp"
         tools:srcCompat="@tools:sample/avatars" />
+
     <EditText
         android:id="@+id/correo"
-        android:layout_width="400dp"
+        android:layout_width="349dp"
         android:layout_height="54dp"
         android:ems="10"
         android:hint="Correo"
@@ -28,7 +29,7 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="397dp"
+        android:layout_width="354dp"
         android:layout_height="55dp"
         android:ems="10"
         android:inputType="textPassword"
