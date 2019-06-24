@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Button btnIng = findViewById(R.id.ingresar);
         btnIng.setOnClickListener(this);
+        Button btnClo = findViewById(R.id.salir);
+        btnClo.setOnClickListener(this);
     }
     public void onClick (View view)
     {
@@ -34,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             Toast.makeText(this, "Usuario y/o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
         }
-
 
     }
 
