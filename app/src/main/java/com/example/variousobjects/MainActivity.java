@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if ((valorCorreo.equals("omar.blanco@8w.com.mx")||valorCorreo.equals("lourdesvega21@hotmail.com")||valorCorreo.equals("djdaan86@gmail.com "))&&valorContrasena.equals("123456"))
         {
-            intent = new Intent(this, DataActivity.class);
+            intent = new Intent(this, Menu.class);
             finish();
             startActivity(intent);
             Toast.makeText(this,"Abriendo Segunda Actividad", Toast.LENGTH_SHORT).show();

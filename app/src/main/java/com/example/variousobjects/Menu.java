@@ -58,8 +58,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.btngps:
-                //  intent= new Intent(this, nomClase.class);
-                // startActivity(intent);
+                  intent= new Intent(this, MapsGPS.class);
+                  startActivity(intent);
                 break;
 
             case R.id.btncreditos:
