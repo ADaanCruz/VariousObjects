@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.salir:
-                Toast.makeText(this,"Adios Popo", Toast.LENGTH_SHORT).show();
-                System.exit(0);
+                Toast.makeText(this,"Adios", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
 
         }
