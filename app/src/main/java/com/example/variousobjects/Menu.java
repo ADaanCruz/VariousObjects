@@ -1,8 +1,8 @@
 package com.example.variousobjects;
 
+
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Button;
 
@@ -64,7 +64,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.btncreditos:
                   intent= new Intent(this, Creditos.class);
-                 startActivity(intent);
+                   startActivity(intent);
                 break;
 
             case R.id.btnantm:

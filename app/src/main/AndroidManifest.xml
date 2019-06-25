@@ -44,7 +44,9 @@
         <activity android:name=".camara" />
         <activity android:name=".Imagenes" />
         <activity android:name=".Menu" />
+        <activity android:name=".Creditos"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
