@@ -54,7 +54,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btn_search_internet"
             app:layout_constraintTop_toTopOf="@+id/btn_search_internet" />
-
+        
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout2"
