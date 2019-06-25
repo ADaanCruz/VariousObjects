@@ -1,6 +1,5 @@
 package com.example.variousobjects;
 
-
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
