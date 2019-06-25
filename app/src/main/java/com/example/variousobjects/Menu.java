@@ -43,13 +43,13 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         switch (view.getId()){
 
             case R.id.btnimg:
-                  intent= new Intent(this, Imagenes.class);
-                 startActivity(intent);
+                intent= new Intent(this, Imagenes.class);
+                startActivity(intent);
                 break;
 
             case R.id.btncamara:
-                  intent= new Intent(this, camara.class);
-                  startActivity(intent);
+                intent= new Intent(this, camara.class);
+                startActivity(intent);
                 break;
 
             case R.id.btninternet:
@@ -63,8 +63,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.btncreditos:
-                //  intent= new Intent(this, nomClase.class);
-                // startActivity(intent);
+                intent= new Intent(this, CreditsActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.btnantm:
