@@ -28,15 +28,5 @@
     <string name="adan_cruz">Adán Cruz</string>
     <string name="my_phone">7224331938</string>
     <string name="omar_blanco">Omar Blanco</string>
-    <string name="creditos">Créditos</string>
-    <string name="text_credits">Versión: 1.0\n\n
-        Materia: Programación de dispositivos móviles\n\n
-        Integrantes:\nLourdes Cecilia Vega Mondragón\nOmar Blanco Macedo José Adán Cruz Castrejón\n\n
-        Powered by: Android Studio</string>
-    <string name="regresar">Regresar</string>
-    <string name="internet">Internet</string>
-    <string name="url">URL</string>
-    <string name="escribe_una_uri">Escribe una uri</string>
-    <string name="entrar">Entrar</string>
     <string name="title_activity_maps_gps">Map</string>
 </resources>
