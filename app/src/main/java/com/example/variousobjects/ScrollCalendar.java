@@ -1,12 +1,14 @@
 package com.example.variousobjects;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ViewParent;
 import android.widget.CalendarView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class ScrollCalendar extends CalendarView {
     public ScrollCalendar(@NonNull Context context) {
