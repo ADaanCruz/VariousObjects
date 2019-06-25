@@ -1,4 +1,31 @@
 <resources>
-    <string name="app_name">VariousObjects</string>
+    <string name="app_name">Various Objects</string>
     <string name="title_activity_menu">Menu</string>
+    <string name="title">Title</string>
+    <string name="instructions">Instructions</string>
+
+    <string name="datos_generales">Datos generales</string>
+    <string name="nombre">Nombre</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="sexo">Sexo</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="telefono">Télefono</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="escribe_tu_informacion">Escribe tu información siguiente.</string>
+
+    <string name="abs_esp_ABC">aábcdeéfghiíjklmnñóopqrstuvwxyz AÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUVWXYZ</string>
+    <string name="n123">0123456789</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="genero">Género</string>
+    <string name="bienvenido">Bienvenid@</string>
+    <string name="su_telefono_es">Su teléfono es</string>
+    <string name="su_nacionalidad_es">Su nacionalidad es</string>
+    <string name="su_edad_es">Su edad es</string>
+    <string name="anterior">Anterior</string>
+
+    <string name="adan_cruz">Adán Cruz</string>
+    <string name="my_phone">7224331938</string>
+    <string name="omar_blanco">Omar Blanco</string>
 </resources>
