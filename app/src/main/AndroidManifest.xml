@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.variousobjects">
+
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -16,10 +17,9 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name = "android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +28,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".InternetActivity"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -36,7 +36,7 @@
 
         <activity
             android:name=".MapsGPS"
-            android:label="@string/title_activity_maps_gps"/>
+            android:label="@string/title_activity_maps_gps" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".DataActivity" />
         <activity android:name=".camara" />

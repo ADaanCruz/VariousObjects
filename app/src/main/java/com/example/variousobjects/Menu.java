@@ -53,8 +53,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.btninternet:
-                //  intent= new Intent(this, nomClase.class);
-                // startActivity(intent);
+                  intent= new Intent(this, InternetActivity.class);
+                  startActivity(intent);
                 break;
 
             case R.id.btngps:
