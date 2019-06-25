@@ -1,12 +1,13 @@
 package com.example.variousobjects;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Intent intent;
@@ -22,6 +23,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void onClick (View view)
     {
+
+        EditText correo = findViewById(R.id.correo);
+        EditText contrasena = findViewById(R.id.password);
+
+        String valorCorreo = correo.getText().toString();
+        String valorContrasena = contrasena.getText().toString();
+
+        if ((valorCorreo.equals("omar.blanco@8w.com.mx")||valorCorreo.equals("lourdesvega21@hotmail.com")||valorCorreo.equals("djdaan86@gmail.com "))&&valorContrasena.equals("123456"))
+        {
+            intent = new Intent(this, Menu.class);
+            finish();
+            startActivity(intent);
+            Toast.makeText(this,"Abriendo Segunda Actividad", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Usuario y/o Contraseña incorrecto", Toast.LENGTH_SHORT).show();
+        }
+
+
         switch (view.getId()){
             case R.id.ingresar:
                 EditText correo = findViewById(R.id.correo);
