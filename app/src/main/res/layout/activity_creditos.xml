@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="30dp"
     tools:context=".Creditos">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="462dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Aplicacion desarrollada por:\n
-        Lourdes Cecilia Vega Monragon\n
-        Adan Cruz Castrejon\n
-        Omar Blanco Macedo" />
+        android:text="Aplicación desarrollada por:\n
+        Lourdes Cecilia Vega Mondragón\n
+        José Adán Cruz Castrejón\n
+        Omar Blanco Macedo"
+        android:textStyle="bold"/>
 
 
     <TextView
@@ -26,7 +28,10 @@
         android:layout_marginTop="103dp"
         android:layout_weight="1"
         android:text="Profesora:\n
-        Rocio Elizabeth Pulido Alba\n" />
+        Rocio Elizabeth Pulido Alba\n"
+        android:textStyle="bold"/>
+
+
 
     <TextView
         android:id="@+id/textView3"
@@ -37,6 +42,19 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="178dp"
         android:layout_weight="1"
-        android:text=" Version 1.0" />
+        android:text=" Version: 1.0"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_regresar_creditos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="50dp"
+        android:text="Regresar" />
 
 </RelativeLayout>
